@@ -1,0 +1,35 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/clang",
+            "cStandard": "c11",
+            "cppStandard": "c++14",
+            "intelliSenseMode": "linux-clang-x64"
+        },
+        {
+            "name": "avr",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/mnt/c/Program Files (x86)/Atmel/Studio/7.0/toolchain/avr8/avr8-gnu-toolchain/avr/include/**",
+                "/mnt/c/Program Files (x86)/Atmel/Studio/7.0/toolchain/avr8/avr8-gnu-toolchain/avr/include/avr/**"
+            ],
+            "defines": [
+                "__ATxmega256A3BU__",
+                "__AVR_ATxmega256A3BU__"
+            ],
+            "compilerPath": "/usr/bin/avr-gcc",
+            "cStandard": "c99",
+            "cppStandard": "c++11",
+            "intelliSenseMode": "gcc-x64",
+            "compilerArgs": [
+                "-mmcu=atxmega256a3bu"
+            ]
+        }
+    ],
+    "version": 4
+}
